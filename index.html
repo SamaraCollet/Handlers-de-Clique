@@ -15,6 +15,7 @@
         <h2>1. Color changer</h2>
         <button id="gray_button">Gray</button>
         <button id="blue_button">Blue</button>
+        <button id="pink_button">Pink</button>
         <div id="color_box" class="gray"></div>        
         <script>
             const color_box = document.getElementById("color_box");
@@ -34,6 +35,12 @@
              *  Adicionar um botão e um event handler 
              *  e o botão torna o quadrado rosa.
              */
+
+            const pink_button = document.getElementById("pink_button");
+            pink_button.onclick = function () {
+                color_box.className = "pink";
+            };
+
         </script>
 
         <hr>
@@ -53,6 +60,8 @@
                  *  atualiza o conteúdo de texto do "countspan" 
                  *  e mostra o valor atual de "count".
                  */
+                count ++
+                countspan.innerHTML = count
             }
         </script>
 
@@ -60,6 +69,7 @@
 
         <h2>3. Even or Odd?</h2>
         <button id="even_or_odd_button">Is the count even or odd?</button>
+
         <script>
             const even_or_odd_button = document.getElementById("even_or_odd_button");
             even_or_odd_button.onclick = function() {
@@ -68,6 +78,11 @@
                  * A função mostra um "alert dialog" mostrando se o contador 
                  * (da segunda tarefa (TODO 2)) é par ou impar.
                  */
+                if (count%2 === 0) {
+                    alert(`O número é par(even) = ${count}`)
+                } else {
+                    alert(`O número é impar(odd) = ${count}`)
+                }
             }
         </script>
     </body>
