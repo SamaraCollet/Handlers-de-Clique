@@ -6,7 +6,9 @@
             #color_box { width: 200px; height: 200px; }
             .gray { background: gray; }
             .blue { background: rgb(67, 111, 255); }
-            .pink { background: pink; }
+            .pink { background: rgb(207, 87, 107); } 
+            .yellow { background: rgb(247, 247, 27); }
+            .green {background: rgb(15, 207, 15); }
         </style>
     </head>
     <body>
@@ -16,6 +18,8 @@
         <button id="gray_button">Gray</button>
         <button id="blue_button">Blue</button>
         <button id="pink_button">Pink</button>
+        <button id="yellow_button">Yellow</button>
+        <button id="green_button">Green</button>
         <div id="color_box" class="gray"></div>        
         <script>
             const color_box = document.getElementById("color_box");
@@ -39,6 +43,16 @@
             const pink_button = document.getElementById("pink_button");
             pink_button.onclick = function () {
                 color_box.className = "pink";
+            };
+
+            const yellow_button = document.getElementById("yellow_button");
+            yellow_button.onclick = function () {
+                color_box.className = "yellow";
+            };
+
+            const green_button = document.getElementById("green_button");
+            green_button.onclick = function () {
+                color_box.className = "green";
             };
 
         </script>
