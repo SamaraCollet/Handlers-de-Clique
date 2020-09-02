@@ -92,8 +92,10 @@
                  * A função mostra um "alert dialog" mostrando se o contador 
                  * (da segunda tarefa (TODO 2)) é par ou impar.
                  */
-                if (count%2 === 0) {
+                if (count%2 === 0 && count > 0) {
                     alert(`O número é par(even) = ${count}`)
+                } else if (count === 0){
+                    alert(`O número é ${count}`)
                 } else {
                     alert(`O número é impar(odd) = ${count}`)
                 }
